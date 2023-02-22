@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-
+    //
     // создание полей для вывода на экран нужных значений
     private EditText massIn; // поле ввода размера массы
     private Button button; // кнопка обработки информации

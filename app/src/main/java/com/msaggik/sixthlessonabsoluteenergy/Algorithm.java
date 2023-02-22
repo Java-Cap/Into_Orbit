@@ -4,7 +4,7 @@ public class Algorithm {
 
     // создание поля для алгоритма (скорости света)
     private final long HEIGTH_OIL = 62; // метров в секунду
-
+    //
     // создание пустого конструктора
     public Algorithm() {
     }
