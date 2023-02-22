@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="370dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/intro"
+        android:gravity="center"
+        android:text="НА ОРБИТУ"
+        android:textColor="#008ACA"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/massIn"
+        android:layout_width="370dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:background="#DAF5FB"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="масса груза ,кг"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#008ACA"
+        android:textColorHint="#858585"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="17dp"
+        android:text="РАСЧИТАТЬ ТОПЛИВО"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/massIn" />
+
+    <TextView
+        android:id="@+id/energyOut"
+        android:layout_width="370dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:background="#EAEBEC"
+        android:gravity="center"
+        android:hint="Топливо ,кг"
+        android:padding="10dp"
+        android:textStyle="bold"
+        android:textColor="#008ACA"
+        android:textColorHint="#7FB0C6"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="525dp"
+        android:layout_height="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.966"
+        app:srcCompat="@mipmap/mars" />
+
+    <TextView
+        android:id="@+id/mars"
+        android:layout_width="61dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="284dp"
+        android:background="#D8F3F9"
+        android:gravity="center"
+        android:text="Марс"
+        android:textColor="#2B2929"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/massIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.327" />
+
+    <TextView
+        android:id="@+id/mars3"
+        android:layout_width="51dp"
+        android:layout_height="2dp"
+        android:layout_marginEnd="288dp"
+        android:background="#2B2929"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#2B2929"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/massIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <TextView
+        android:id="@+id/venera"
+        android:layout_width="70dp"
+        android:layout_height="26dp"
+        android:gravity="center"
+        android:text="Венера"
+        android:textColor="#2B2929"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/massIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+    <TextView
+        android:id="@+id/venera2"
+        android:layout_width="62dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="68dp"
+        android:gravity="center"
+        android:text="Земля"
+        android:textColor="#2B2929"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/massIn"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.319" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
