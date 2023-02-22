@@ -11,7 +11,7 @@
         android:layout_width="370dp"
         android:layout_height="30dp"
         android:layout_marginTop="96dp"
-        android:fontFamily="@font/intro"
+        android:fontFamily="@font/intr"
         android:gravity="center"
         android:text="НА ОРБИТУ"
         android:textColor="#008ACA"
